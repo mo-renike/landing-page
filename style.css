@@ -1,0 +1,334 @@
+html{
+    color: white;
+    word-spacing: normal;
+    letter-spacing: normal;
+    max-width: 100vw;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: hsl(218, 28%, 13%) ;
+    padding: auto;
+    max-width: 100vw;
+}
+h1{
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+h2{
+    font-size:  2rem;    
+}
+
+h3{
+    font-size: 1rem;
+}
+
+
+p{
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+h1, h2, h3, h4{
+    font-family: 'Raleway';
+    font-weight: 700;
+}
+
+
+h1, h2, h3, p{
+    line-height: 1.5;
+}
+
+.header{
+    background-color: hsl(218, 28%, 15%) ;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+
+.navbar{
+    background-color: inherit;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+.navbar a{
+    text-decoration: none;
+    color: hsl(0, 0%, 100%);
+    font-size: 16px;
+    padding: 20px;
+}
+
+
+.navbar a:hover{
+    color: hsl(198, 60%, 50%) ;
+}
+
+
+
+.intro{
+    display: block;
+    text-align: center;
+    width: 100%;
+    background-color: hsl(217, 28%, 15%);
+}
+
+
+.btn{
+    padding: 10px;
+    width: 15rem;
+    font-size: 18px;
+    font-weight: 400;
+    background-color: hsl(176, 68%, 64%);
+    color: white;
+    margin-top: 20px;
+    border-radius: 60px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+
+
+.btn:hover{
+    color: hsl(198, 60%, 50%) ;
+    background-color: white;
+}
+
+
+.features{
+    background-image: url("images/bg-curvy-desktop.svg");
+    background-color: hsl(218, 28%, 15%) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    padding: 30px;
+}
+
+
+.feature-item{
+    padding: 30px;
+    display: block;
+    text-align: center;
+    width: 50%;
+}
+
+
+.details{
+    background-color: hsl(218, 28%, 13%) ;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+
+
+.details-item{
+    width: 40%;
+    padding: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+
+.link{
+    color: hsl(176, 68%, 64%) ;
+    text-decoration: none;
+    text-underline-offset: 10px;
+    padding: 10px 0 0 0;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+
+
+.link:hover{
+    color: white;
+}
+
+
+.testimonySection {
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(218, 28%, 13%) ;
+    padding: 50px;
+}
+
+
+.testimonyWrapper {
+    width: 80%;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+
+.invertedComma {
+    width: 50px;
+    margin-bottom: -10px;
+    margin-left: -5px;
+}
+
+
+.testimonials{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: auto;
+}
+
+
+.testimony{
+    display: block;
+    width: 30%;
+    background-color:hsl(219, 30%, 18%) ;
+    padding: 10px;
+    margin-bottom: 50px;
+}
+
+
+.profile{
+    display: flex;
+    flex-direction: row;
+}
+
+
+.profile p{
+    font-size: 12px;   
+    padding-left: 7px;
+}
+
+
+.dp{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    margin-top: 2px;
+}
+
+
+.sign-up{
+    display: block;
+    position: relative;
+    width: 50%;
+    background-color: hsl(217, 28%, 15%);
+    text-align: center;
+    margin-left: 25%;
+    z-index: 99;
+    margin-top: 50px;
+    margin-bottom: -120px;
+    padding: 10px;
+}
+
+
+input[type=email]{
+    width: 50%;
+    background-color: white;
+    color: hsl(219, 30%, 18%);
+    border-radius: 60px;
+    padding: 12px;
+    margin: 5px;
+}
+ 
+
+.footer-container{
+    background-color: hsl(216, 53%, 9%);
+    padding: 20px;
+    
+}
+
+.footer-wrapper{
+    margin: 3rem 0 0 3rem;
+    display: grid;
+    grid-template-columns:auto auto auto auto auto;
+}
+
+.footer-item{
+    margin: 4rem 1rem 3rem 4rem;
+    padding: auto;
+}
+
+
+.icons{
+    width: 24px;
+    padding: 5px;
+    margin: 4px;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+
+.flex{
+    display: flex;
+    flex-direction: row;
+}
+
+/* ,,,,,,,,,,,,,,,,,,,,,,,responsiveness,,,,,,,,,,,,,,,,,*/
+
+@media only screen and (max-width: 600px){
+    .navbar a{
+        font-size: 13px;
+        padding: 10px;
+    }
+    .intro img{
+        width: 80%;
+    }
+    h2{
+        font-size: 1.8rem;
+        padding: auto;
+    }
+    .features{
+        background-image: url("images/bg-curvy-mobile.svg");
+        display: block;
+    }
+    .feature-item{
+        padding: 30px;
+        display: block;
+        width: 100%;
+    }    
+    .details{
+        display: block;
+        width: 100%;
+    }
+    .details img{
+        width: 100%;
+    }
+    .details-item{
+        width: 100%;
+    }
+    .testimonials{
+        display: block; 
+    }
+    .testimony{
+        width: 100%;
+    }
+    .sign-up{
+        width: 80%;
+        display: block;
+        margin: auto;
+    }
+    .btn,
+    input[type=email]{
+        width: 80%;
+        padding: 10px;
+    }
+    .footer-wrapper{
+        display: block;
+        margin: auto;
+    }
+    .footer-item{
+        width: 100%;
+    }
+}
