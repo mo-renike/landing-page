@@ -72,9 +72,10 @@ h1, h2, h3, p{
 
 
 .navbar a:hover{
-    color: hsl(198, 60%, 50%) ;
+    font-weight: 500;
+    text-decoration: underline;
+    text-decoration-style: solid;
 }
-
 
 
 .intro{
@@ -90,7 +91,7 @@ h1, h2, h3, p{
     width: 15rem;
     font-size: 18px;
     font-weight: 400;
-    background-color: hsl(176, 68%, 64%);
+    background-color: hsl(198, 60%, 50%);
     color: white;
     margin-top: 20px;
     border-radius: 60px;
@@ -100,8 +101,7 @@ h1, h2, h3, p{
 
 
 .btn:hover{
-    color: hsl(198, 60%, 50%) ;
-    background-color: white;
+    background-color: hsl(176, 68%, 64%);
 }
 
 
@@ -247,7 +247,6 @@ input[type=email]{
 .footer-container{
     background-color: hsl(216, 53%, 9%);
     padding: 20px;
-    
 }
 
 .footer-wrapper{
@@ -261,23 +260,35 @@ input[type=email]{
     padding: auto;
 }
 
+.footer-wrapper a{
+    text-decoration: none;
+    color: white;
+    font-size: inherit;
+    padding: 10px;
+}
+
+.footer-wrapper a:hover{
+    font-weight: 700;
+}
+.footer-links{
+    display: grid;
+}
 
 .icons{
-    width: 24px;
+    width: 25px;
     padding: 5px;
-    margin: 4px;
     border: 1px solid white;
     border-radius: 50%;
 }
-
-.flex{
-    display: flex;
-    flex-direction: row;
+.icons:hover{
+    fill: hsl(198, 60%, 50%);
+    border-color: hsl(198, 60%, 50%);
+    color: hsl(198, 60%, 50%);
 }
 
 /* ,,,,,,,,,,,,,,,,,,,,,,,responsiveness,,,,,,,,,,,,,,,,,*/
 
-@media only screen and (max-width: 600px){
+@media all and (max-width: 600px){
     .navbar a{
         font-size: 13px;
         padding: 10px;
@@ -315,7 +326,7 @@ input[type=email]{
         width: 100%;
     }
     .sign-up{
-        width: 80%;
+        width: 60%;
         display: block;
         margin: auto;
     }
@@ -330,5 +341,62 @@ input[type=email]{
     }
     .footer-item{
         width: 100%;
+    }
+}
+
+
+
+@media all and (max-width: 900px){
+    .intro img{
+        width: 70%;
+    }
+    .features{
+        background-image: url("images/bg-curvy-mobile.svg");
+        display: block;
+    }
+    .feature-item{
+        padding: 30px;
+        display: block;
+        text-align: center;
+        width: 70%;
+        margin: auto;
+    }    
+    .details{
+        display: block;
+        width: 70%;
+        margin: auto;
+    }
+    .details img{
+        width: 70%;
+    }
+    .details-item{
+        width: 70%;
+    }
+    .testimonials{
+        display: block; 
+    }
+    .testimony{
+        width: 100%;
+    }
+    .sign-up{
+        width: 50%;
+        display: block;
+        position: relative;
+        margin: auto;
+    }
+    .btn,
+    input[type=email]{
+        width: 40%;
+        padding: 10px;
+    }
+    .footer-wrapper{
+        display: flex;
+        flex-direction: row;
+        margin: auto;
+        width: 100%;
+    }
+    .footer-item{
+        width: auto;
+        margin: auto;
     }
 }
